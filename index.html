@@ -3,16 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WHAT TO DO! IS SCOOBY DOO...</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>TASK MANAGER</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <script>src="script.jss"</script>
-    <div class="outer">
-        <div class="sbg"></div>
-        <div class="home">
-            <div class="m-bt"></div>
+    <div class="container">
+        <div class="stats-container">
+            <div class="details">
+                <h1>TODO-APP</h1>
+                <p><strong>!KEEP GOING!</strong></p>
+                <div id="progressbar">
+                    <div id="progress"></div>
+                </div>
+            </div>
+            <div class="stats-numbers">
+                <div id="numbers">0 / 0</div>
+            </div>
         </div>
+        <form action="">
+            <input type="text" id="taskinput" placeholder="WRITE YOUR TASK">
+            <button id="newtask" type="submit">+</button>
+        </form>
+        <ul id="task-list"></ul>
     </div>
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
 </body>
 </html>
